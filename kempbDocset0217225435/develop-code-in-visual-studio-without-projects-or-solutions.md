@@ -67,7 +67,7 @@ The following example shows how to clone a GitHub repo and then open its code in
 1. Go to the repo you want to clone.
 1. On the repo's GitHub page, choose the **Clone or Download** button and then choose the **Copy to Clipboard** button in the dropdown menu to copy the secure URL for the GitHub site.
 
-  ![GitHub clone button](../VS 2017 RTW Topics/media/VSIDE_Code_Clone.png)
+  ![GitHub clone button](../media/VSIDE_Code_Clone.png)
 
     > [!NOTE]
     >  While you also have the option to open the project on your desktop or download a .zip file of the project, this example demonstrates how to clone the repo using the secure URL method.
@@ -75,20 +75,20 @@ The following example shows how to clone a GitHub repo and then open its code in
 1. In Visual Studio, choose the **Team Explorer** tab to open Team Explorer.
 1. In Team Explorer, under the **Local Git Repositories** section, choose the **Clone** command and then paste the URL of the GitHub page into the text box.
 
-  ![Clone the project](../VS 2017 RTW Topics/media/VSIDE_Code_Clone2.png)
+  ![Clone the project](../media/VSIDE_Code_Clone2.png)
 
 1. Choose the **Clone** button to clone the project's files to a local Git repository. Depending on the size of the repo, this process could take several minutes.
 1. After the repo has been cloned to your system, in Team Explorer, choose the **Open** command on the context (right-click) menu of the newly cloned project.
 
-  ![Cloned project](../VS 2017 RTW Topics/media/VSIDE_Code_Clone3.png)
+  ![Cloned project](../media/VSIDE_Code_Clone3.png)
 
 1. Choose the **Show Folder View** command to view the files in Solution Explorer
 
-  ![Show folder view](../VS 2017 RTW Topics/media/VSIDE_Code_Clone3_show.png)
+  ![Show folder view](../media/VSIDE_Code_Clone3_show.png)
 
   You can now browse folders and files in the cloned project and view and search the code in the Visual Studio code editor, complete with syntax colorization and other features.
 
-    ![Searching cloned project code](../VS 2017 RTW Topics/media/VSIDE_Code_Clone4.png)
+    ![Searching cloned project code](../media/VSIDE_Code_Clone4.png)
 
 
 ## Debug your code
@@ -121,11 +121,11 @@ If you try to run your code and Visual Studio doesn't know how to run it, an inf
 
 1. Choose the folder of the project in Solution explorer, and on its context (right-click) menu, choose **Configure Tasks**.
 
-  ![Configure tasks](../VS 2017 RTW Topics/media/VSIDE_Code_Config_Task.png)
+  ![Configure tasks](../media/VSIDE_Code_Config_Task.png)
 
   Choosing **Configure Tasks** opens a file called tasks.vs.json. If this file doesn't exist, it is created. This file contains the build tasks for the selected folder.
 
-  ![Tasks.vs.json file](../VS 2017 RTW Topics/media/VSIDE_Code_Tasks_JSON.png)
+  ![Tasks.vs.json file](../media/VSIDE_Code_Tasks_JSON.png)
 
 1. Add to tasks.vs.json the build tasks needed to run your codebase. You can add clean and rebuild taskTypes. Visual Studio supports the VSCode `$variable` substitution, in addition to any environment variables (such as `$env.var`) or keys in the root of tasks.json.
 
@@ -143,10 +143,10 @@ The following example shows how to add a custom task called "Make Documentation"
 
 1. Choose a file or folder in Solution Explorer and choose the **Task Settings** command on the context menu.
 
-  ![Task 1](../VS 2017 RTW Topics/media/VSIDE_Code_Tasks_Custom1.png)
+  ![Task 1](../media/VSIDE_Code_Tasks_Custom1.png)
 
 1. Add the task to the tasks.json file.
 
-  ![Task 2](../VS 2017 RTW Topics/media/VSIDE_Code_Tasks_Custom2.png)
+  ![Task 2](../media/VSIDE_Code_Tasks_Custom2.png)
 
 1. On the context menu of the item, choose the new **Make Documentation** command.
