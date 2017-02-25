@@ -68,7 +68,7 @@ The following example shows how to clone a GitHub repo and then open its code in
 1. Go to the repo you want to clone.
 1. On the repo's GitHub page, choose the **Clone or Download** button and then choose the **Copy to Clipboard** button in the dropdown menu to copy the secure URL for the GitHub site.
 
-  ![GitHub clone button](./VS 2017 RTW Topics/media/VSIDE_Code_Clone.png)
+  ![GitHub clone button](./media/VSIDE_Code_Clone.png)
 
     > [!NOTE]
     >  While you also have the option to open the project on your desktop or download a .zip file of the project, this example demonstrates how to clone the repo using the secure URL method.
@@ -76,20 +76,20 @@ The following example shows how to clone a GitHub repo and then open its code in
 1. In Visual Studio, choose the **Team Explorer** tab to open Team Explorer.
 1. In Team Explorer, under the **Local Git Repositories** section, choose the **Clone** command and then paste the URL of the GitHub page into the text box.
 
-  ![Clone the project](./VS 2017 RTW Topics/media/VSIDE_Code_Clone2.png)
+  ![Clone the project](./media/VSIDE_Code_Clone2.png)
 
 1. Choose the **Clone** button to clone the project's files to a local Git repository. Depending on the size of the repo, this process could take several minutes.
 1. After the repo has been cloned to your system, in Team Explorer, choose the **Open** command on the context (right-click) menu of the newly cloned project.
 
-  ![Cloned project](./VS 2017 RTW Topics/media/VSIDE_Code_Clone3.png)
+  ![Cloned project](./media/VSIDE_Code_Clone3.png)
 
 1. Choose the **Show Folder View** command to view the files in Solution Explorer
 
-  ![Show folder view](./VS 2017 RTW Topics/media/VSIDE_Code_Clone3_show.png)
+  ![Show folder view](./media/VSIDE_Code_Clone3_show.png)
 
   You can now browse folders and files in the cloned project and view and search the code in the Visual Studio code editor, complete with syntax colorization and other features.
 
-    ![Searching cloned project code](./VS 2017 RTW Topics/media/VSIDE_Code_Clone4.png)
+    ![Searching cloned project code](./media/VSIDE_Code_Clone4.png)
 
 
 ## Debug your code
@@ -97,7 +97,7 @@ You can debug your code in Visual Studio. To debug some languages, you may need 
 
 The drop down list box next to the Run button on the toolbar lists all of the startup items that Visual Studio detects, as well as items you choose in a folder.
 
-![Run Button](./VS 2017 RTW Topics/media/VSIDE_Code_Run_Button.png)
+![Run Button](./media/VSIDE_Code_Run_Button.png)
 
 Visual Studio automatically recognizes projects, but scripts (such as Python and JavaScript) need to be explicitly selected by you as a startup item before they will appear in the list.
 In addition, some startup items, such as MSBuild and CMake, can have multiple build configurations which appear in the Run Button's drop down list.
@@ -133,11 +133,11 @@ You can also create arbitrary build tasks that can do nearly anything you want. 
 
 1. Choose the file or folder of the project in Solution explorer where you want the task, and on the file or folder's context (right-click) menu, choose **Configure Tasks**.
 
-  ![Configure tasks](./VS 2017 RTW Topics/media/VSIDE_Code_Config_Task.png)
+  ![Configure tasks](./media/VSIDE_Code_Config_Task.png)
 
   Choosing **Configure Tasks** opens a file called tasks.vs.json. If this file doesn't exist, it is created. This file contains the build tasks for the selected file or folder.
 
-  ![Tasks.vs.json file](./VS 2017 RTW Topics/media/VSIDE_Code_Tasks_JSON.png)
+  ![Tasks.vs.json file](./media/VSIDE_Code_Tasks_JSON.png)
 
 1. Add the following build task to tasks.vs.json. For this example, we'll add a simple task called "List outputs" that lists files and subfolders of the selected folder in the Output window. (The new task should be added within the existing "tasks" array.)
 
@@ -154,12 +154,12 @@ You can also create arbitrary build tasks that can do nearly anything you want. 
   ```
   The complete build task should look like this.
 
-  ![Arbitrary build task](./VS 2017 RTW Topics/media/VSIDE_Code_Tasks_ArbTask.png)
+  ![Arbitrary build task](./media/VSIDE_Code_Tasks_ArbTask.png)
 
 1. Save the project.
 1. Open the context menu for the selected folder. You should see the new arbitrary build task appear at the bottom of the context menu.
 
-  ![Arbitrary build task command](./VS 2017 RTW Topics/media/VSIDE_Code_Tasks_ArbTask2.png)
+  ![Arbitrary build task command](./media/VSIDE_Code_Tasks_ArbTask2.png)
 
 1. Choose the new **List outputs** command to execute the task.
 
@@ -169,7 +169,7 @@ In this procedure, we will add two custom build tasks that use nMake to build an
 
 1. Choose a file of the project in Solution explorer that you want to designate later as the startup item. On the file's context (right-click) menu, choose **Configure Tasks**.
 
-  ![Custom build task command](./VS 2017 RTW Topics/media/VSIDE_Code_Tasks_CustTask1.png)
+  ![Custom build task command](./media/VSIDE_Code_Tasks_CustTask1.png)
 
 1. Add the following build tasks to tasks.vs.json. For this example, we'll add two tasks: one called "makefile-build" which uses the nMake command to build the project, the other called makefile-clean which calls the nMake command with the "clean" argument. These tasks should be added within the existing "tasks" array. (Note that these are only example build tasks. For them to actually work, you need to have the workload that contains [nNake](https://docs.microsoft.com/en-us/cpp/build/nmake-reference) installed on your system.)
 
@@ -194,12 +194,12 @@ In this procedure, we will add two custom build tasks that use nMake to build an
   ```
   The complete custom build task should look like this.
 
-  ![Custom build task](./VS 2017 RTW Topics/media/VSIDE_Code_Tasks_CustTask2.png)
+  ![Custom build task](./media/VSIDE_Code_Tasks_CustTask2.png)
 
 1. Save the project.
 1. Open the context menu for the selected file. The new custom build tasks should appear in the middle of the context menu.
 
-  ![Custom build task command](./VS 2017 RTW Topics/media/VSIDE_Code_Tasks_CustTask3.png)
+  ![Custom build task command](./media/VSIDE_Code_Tasks_CustTask3.png)
 
   > [!NOTE]
   > The commands appear under the **Configure Tasks** command due to their `contextType` settings; "build" and "clean" are build commands, so they appear in the build section in the middle of the context menu.
@@ -208,11 +208,11 @@ In this procedure, we will add two custom build tasks that use nMake to build an
 
 1. On the file's context menu, choose **Set as Startup Item**.
 
-  ![Custom build task command](./VS 2017 RTW Topics/media/VSIDE_Code_Tasks_CustTask4.png)
+  ![Custom build task command](./media/VSIDE_Code_Tasks_CustTask4.png)
 
 1. On the toolbar, choose the dropdown arrow next to the **Run** button. The startup item now appears as an option.
 
-  ![Custom build task command](./VS 2017 RTW Topics/media/VSIDE_Code_Tasks_CustTask5.png)
+  ![Custom build task command](./media/VSIDE_Code_Tasks_CustTask5.png)
 
 You can now choose the **Run** button or the F5 key to run your codebase. You can now edit and debug your codebase in Visual Studio even though Visual Studio doesn't recognize the build tools of the codebase. Output from the build task appears in the **Output** window, and build errors appear in the **Error List**. The tasks.vs.json build task file couples the Visual Studio inner development loop to the custom build tools used by your codebase.
 
@@ -232,7 +232,7 @@ Specifying the output location notifies Visual Studio where to find the project'
 
 By default, the tasks.vs.json file is located in a hidden folder called `.vs`. To view hidden files in Visual Studio, choose the **Show All Files** button on the Solution Explorer toolbar.
 
-![Arbitrary build task command](./VS 2017 RTW Topics/media/VSIDE_Code_Tasks_FileLocation.png)
+![Arbitrary build task command](./media/VSIDE_Code_Tasks_FileLocation.png)
 
 The tasks.vs.json file is hidden typically because most users don't want to check it into source control. However, if you want to be able to check it into source control, drag the file into the root of your project where it will be visible.
 
