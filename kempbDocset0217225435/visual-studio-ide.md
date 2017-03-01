@@ -51,7 +51,7 @@ The web drives our modern world, and Visual Studio can help you write apps for i
 ### Write code in a world class editing environment
 Visual Studio IDE helps you write code quickly and easily through features such as syntax colorization, statement completion, IntelliSense (pop-up descriptions of the selected code element), code outlining, setting breakpoints for debugging, and much more.
 
-![JavaScript code example](./media/VSIDE_Tour_JavaScript_Example.gif)
+![JavaScript code example](../media/VSIDE_Tour_JavaScript_Example.gif)
 
 To learn more, see [Writing Code in the Code and Text Editor](https://docs.microsoft.com/visualstudio/ide/writing-code-in-the-code-and-text-editor).
 
