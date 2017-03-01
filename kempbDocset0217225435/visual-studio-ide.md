@@ -1,7 +1,7 @@
 ---
 title: "Visual Studio IDE feature tour | Microsoft Docs"
 ms.custom: ""
-ms.date: "02/28/2017"
+ms.date: "03/01/2017"
 ms.reviewer: ""
 ms.suite: ""
 ms.tgt_pltfrm: ""
@@ -25,8 +25,7 @@ translation.priority.mt:
   - "cs-cz"
   - "pl-pl"
   - "pt-br"
-  - "tr-tr"
----
+  - "tr-tr"---
 # Visual Studio IDE feature tour
 This topic introduces you to the features of Visual Studio IDE. Visual Studio IDE is an interactive development environment (IDE); a creative launching pad that you can use to view and edit nearly any kind of code, and then debug, build, and publish apps for Android, iOS, Windows, the web, and the cloud. There are versions available for Mac and Windows. We'll walk through some things you can do with Visual Studio and how to install and use it, walk through creating a simple project, get pointers on debugging and deploying code, and take a tour of the various tool windows.
 
@@ -51,7 +50,7 @@ The web drives our modern world, and Visual Studio can help you write apps for i
 ### Write code in a world class editing environment
 Visual Studio IDE helps you write code quickly and easily through features such as syntax colorization, statement completion, IntelliSense (pop-up descriptions of the selected code element), code outlining, setting breakpoints for debugging, and much more.
 
-![JavaScript code example](../media/VSIDE_Tour_JavaScript_Example.gif)
+![JavaScript code example](./media/VSIDE_Tour_JavaScript_Example.gif)
 
 To learn more, see [Writing Code in the Code and Text Editor](https://docs.microsoft.com/visualstudio/ide/writing-code-in-the-code-and-text-editor).
 
